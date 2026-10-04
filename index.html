@@ -9,15 +9,18 @@
     <style>
         body {
             font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #fff2d7;
+            color: #2d3a55;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .pub {
             word-spacing: 1px;
-        }
-
-        .title {
-            display: grid;
-            place-items: center;
         }
 
         li {
@@ -71,13 +74,17 @@
 </head>
 
 <body>
-    <div class="title">
+    <div class="center">
         <h1>Kağan Akman</h1>
+    </div>
+    <div class="center">
         <h3>Ph.D. Student at Bilkent University, Department of Mathematics</h3>
     </div>
 
     <div>
-        <h3>Research Interests</h3>
+        <div class="center">
+            <h3>Research Interests</h3>
+        </div>
         <ul>
             <li>
                 Stochastic Control Theory: Optimal control, distributional robustness, finite model approximations,
