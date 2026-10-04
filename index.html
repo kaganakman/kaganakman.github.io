@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kağan Akman</title>
+
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .pub {
+            word-spacing: 1px;
+        }
+
+        .title {
+            display: grid;
+            place-items: center;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        @counter-style pub {
+            system: numeric;
+            symbols: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9";
+            prefix: "[J";
+            suffix: "] ";
+        }
+
+        @counter-style preprint {
+            system: numeric;
+            symbols: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9";
+            prefix: "[P";
+            suffix: "] ";
+        }
+
+        @counter-style conf {
+            system: numeric;
+            symbols: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9";
+            prefix: "[C";
+            suffix: "] ";
+        }
+
+        @counter-style talks {
+            system: numeric;
+            symbols: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9";
+            prefix: "[T";
+            suffix: "] ";
+        }
+
+        ol.pub {
+            list-style-type: pub;
+        }
+
+        ol.preprint {
+            list-style-type: preprint;
+        }
+
+        ol.conf {
+            list-style-type: conf;
+        }
+
+        ol.talks {
+            list-style-type: talks;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Kağan Akman</h1>
+        <h3>Ph.D. Student at Bilkent University, Department of Mathematics</h3>
+    </div>
+
+    <div>
+        <h3>Research Interests</h3>
+        <ul>
+            <li>
+                Stochastic Control Theory: Optimal control, robustness to incorrect models, finite model approximations,
+                measure-valued Markov decision processes, reinforcement learning, optimal filtering.
+            </li>
+            <li>
+                Machine Learning: Mathematical foundations of deep learning, control--theoretic approaches to
+                Transformers, generalization problem, expressivity of neural networks.
+            </li>
+            <li>
+                Game Theory: Mean-field games, graphon games, information-structural properties of equilibria, existence
+                of Nash equilibria in discounted games.
+            </li>
+            <li>
+                Optimal Transport: Gradient flows on the space of probability measures, optimal transport formulations
+                of statistical learning.
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Education</h3>
+
+        <b>Ph.D. in Mathematics at Bilkent University, Jan. 2025 - <i>Present</i></b>
+        <div class="advisors">Advisors: Naci Saldi and Serdar Yüksel</div>
+        <br>
+        <b>B.S. in Mathematics at Bilkent University, Jan. 2021 - Jan. 2025</b>
+        <div class="advisors">Senior Thesis: <i>Geometry of Self-Similar Sets</i>, supervised by Aurelian Gheondea</div>
+    </div>
+
+    <div>
+        <h3>Preprints</h3>
+        <ol class="preprint" reversed>
+            <li>
+                <div class="pub">
+                    <i>"When can Transformers Achieve Optimal Token Prediction for Non-Markovian Data?: Error Bounds via
+                        Finite Model with Finite Memory Approximability and Filter Stability"</i>,
+                    with Jake Feldman Starosta, Naci Saldi and Serdar Yüksel, (2026).
+            </li>
+            <li>
+                <div class="pub">
+                    <i>"Generalization Bounds on Optimal Control for Transformer Training and Wasserstein Distributional
+                        Robustness."</i> with Naci Saldi and Serdar Yüksel, <a
+                        href="https://arxiv.org/pdf/2607.27975">arXiv preprint arXiv:2607.27975</a> (2026).
+                </div>
+            </li>
+            <li>
+                <div class="pub">
+                    <i>"An Optimal Control Approach to Transformer Training."</i> with Naci Saldi and Serdar Yüksel,
+                    <a href="https://arxiv.org/pdf/2603.09571">arXiv preprint arXiv:2603.09571</a> (2026).
+                </div>
+            </li>
+        </ol>
+    </div>
+
+    <div>
+        <h3>Talks</h3>
+        <ol class="talks" reversed>
+            <li>
+                <div class="talk">
+                    <i>How well can an optimally trained Transformer predict the next token for non-Markovian
+                        sources?</i>, jointly presented with Jake Feldman Starosta, Department of Mathematics and
+                    Statistics, Seminar on Stochastic Control and Related Areas, Queen's
+                    University, Sep. 2026.
+                </div>
+            </li>
+            <li>
+                <div class="talk">
+                    <i>Generalization Bounds on Optimal Control for Transformer Training and Wasserstein Distributional
+                        Robustness</i>, Department of Mathematics and
+                    Statistics, Seminar on Stochastic Control and Related Areas, Queen's
+                    University, Jul. 2026.
+                </div>
+            </li>
+            <li>
+                <div class="talk">
+                    <i>An Optimal Control Approach to Transformers Training</i>, Department of Mathematics and
+                    Statistics, Seminar on Stochastic Control and Related Areas, Queen's
+                    University, Feb. 2026.
+                </div>
+            </li>
+            <li>
+                <div class="talk">
+                    <i>An Optimal Control Approach to Transformers</i>, Department of Mathematics, Analysis Seminar,
+                    Bilkent
+                    University, Nov. 2025.
+                </div>
+            </li>
+            <li>
+                <div class="talk">
+                    <i>Discrete-Time Markov Decision Processes</i>, Department of Mathematics, Analysis Seminar, Bilkent
+                    University, Dec 2024.
+                </div>
+            </li>
+            <li>
+                <div class="talk">
+                    <i>Geometry of Self-Similar Sets</i>, Department of Mathematics, Analysis Seminar, Bilkent
+                    University, May 2024.
+                </div>
+            </li>
+        </ol>
+    </div>
+</body>
+
+</html>
