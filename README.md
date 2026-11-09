@@ -1,2 +1,2 @@
-# kagan.github.io
+# kaganakman.github.io
 Personal webpage of Kağan Akman
