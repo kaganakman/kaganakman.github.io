@@ -5,20 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kağan Akman</title>
+    <meta name="description" content="Kağan Akman, Ph.D. student in Mathematics at Bilkent University.">
+    <link rel="canonical" href="https://kaganakman.github.io/">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Kağan Akman">
+    <meta property="og:description" content="Ph.D. student in Mathematics, Bilkent University.">
+    <meta property="og:url" content="https://kaganakman.github.io/">
 
     <style>
+    :root {
+        --bg: #fff2d7;
+        --fg: #2d3a55;
+        --link: #1f4f9a;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --bg: #1d2333;
+            --fg: #ece3cf;
+            --link: #9cc0ff;
+        }
+    }
+
         body {
             font-family: Georgia, 'Times New Roman', Times, serif;
-            background-color: #fff2d7;
-            color: #2d3a55;
+            background-color: var(--bg);
+            color: var(--fg);
+            max-width: 46rem;
+            margin: 0 auto;
+            padding: 1.5rem;
+            line-height: 1.55;
+            font-weight: lighter;
         }
 
-        .center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+        a { color: var(--link); }
+        a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
 
+        header { text-align: center; }
+        h1 { margin-bottom: 0.25rem; }
+        .subtitle { margin-top: 0; font-size: 1.17em; font-weight: bold; }
+        .links { margin-top: 0.5rem; }
+        h2 { font-size: 1.17em; margin-top: 2rem; }
+        h3 { font-size: 1em; margin: 1rem 0 0.25rem; }
         .pub {
             word-spacing: 1px;
         }
@@ -70,69 +98,80 @@
         ol.talks {
             list-style-type: talks;
         }
+
+        @media print {
+            :root { --bg: #fff; --fg: #000; --link: #000; }
+            body { max-width: none; padding: 0; }
+            a { text-decoration: none; }
+        }
     </style>
 </head>
 
 <body>
-    <div class="center">
+    <header>
         <h1>Kağan Akman</h1>
-    </div>
-    <div class="center">
-        <h3>Ph.D. Student at Bilkent University, Department of Mathematics</h3>
-    </div>
+        <p class="subtitle">Ph.D. Student at Bilkent University, Department of Mathematics</p>
+        <p class="links">
+            <a href="kagan.akman@bilkent.edu.tr" rel="me">Email</a>
+            <a href="https://scholar.google.com/citations?hl=en&user=9Pnu54IAAAAJ" rel="me">Google Scholar</a>
+            <a href="https://github.com/kaganakman" rel="me">GitHub</a>
+        </p>
+    </header>
 
-    <div>
-        <div class="center">
-            <h3>Research Interests</h3>
-        </div>
-        <ul>
-            <li>
-                Stochastic Control Theory: Optimal control, distributional robustness, finite model approximations,
-                measure-valued Markov decision processes.
-            </li>
-            <li>
-                Machine Learning: Mathematical foundations of deep learning, control--theoretic approaches to
-                Transformers, generalization problem, expressivity of neural networks.
-            </li>
-        </ul>
-    </div>
+    <main>
+        <section>
+            <h2> Research Interests </h2>
 
-    <div>
-        <h3>Education</h3>
+            <ul>
+                <li>
+                    Stochastic Control Theory: Optimal control, distributional robustness, finite model approximations,
+                    measure-valued Markov decision processes.
+                </li>
+                <li>
+                    Machine Learning: Mathematical foundations of deep learning, control-theoretic approaches to
+                    Transformers, generalization problem, expressivity of neural networks.
+                </li>
+            </ul>
+        </section>
 
-        <b>Ph.D. in Mathematics at Bilkent University, Jan. 2025 - <i>Present</i></b>
-        <div class="advisors">Advisors: Naci Saldi and Serdar Yüksel</div>
-        <br>
-        <b>B.S. in Mathematics at Bilkent University, Jan. 2021 - Jan. 2025</b>
-        <div class="advisors">Senior Thesis: <i>Geometry of Self-Similar Sets</i>, supervised by Aurelian Gheondea</div>
-    </div>
+        <section>
+            <h2>Education</h2>
 
-    <div>
-        <h3>Preprints</h3>
-        <ol class="preprint" reversed>
-            <li>
-                <div class="pub">
-                    <i>"When can Optimally Trained Transformers Achieve Near-Lossless Token Prediction for non-Markovian Data?".</i> with Jake Feldman Starosta, Naci Saldi and Serdar Yüksel, <a
-                    href="https://arxiv.org/pdf/2610.41038">arXiv preprint arXiv:2610.41038</a> (2026).
-            </li>
-            <li>
-                <div class="pub">
-                    <i>"Generalization Bounds on Optimal Control for Transformer Training and Wasserstein Distributional
-                        Robustness."</i> with Naci Saldi and Serdar Yüksel, <a
-                        href="https://arxiv.org/pdf/2607.27975">arXiv preprint arXiv:2607.27975</a> (2026).
-                </div>
-            </li>
-            <li>
-                <div class="pub">
-                    <i>"An Optimal Control Approach to Transformer Training."</i> with Naci Saldi and Serdar Yüksel,
-                    <a href="https://arxiv.org/pdf/2603.09571">arXiv preprint arXiv:2603.09571</a> (2026).
-                </div>
-            </li>
-        </ol>
-    </div>
+            <h3>Ph.D. in Mathematics at Bilkent University, Jan. 2025 – <i>Present</i></h3>
+            <div class="advisors">Advisors: Naci Saldi and Serdar Yüksel</div>
 
-    <div>
-        <h3>Departmental Talks</h3>
+            <h3>B.S. in Mathematics at Bilkent University, Jan. 2021 – Jan. 2025</h3>
+            <div class="advisors">Senior Thesis: <i>Geometry of Self-Similar Sets</i>, supervised by Aurelian Gheondea</div>
+        </section>
+        <section>
+            <h2>Preprints</h2>
+            <ol class="preprint" reversed>
+                <li>
+                    <div class="pub">
+                        <i>“When can Optimally Trained Transformers Achieve Near-Lossless Token Prediction for non-Markovian Data?”</i>
+                        with Jake Feldman Starosta, Naci Saldi and Serdar Yüksel,
+                        <a href="https://arxiv.org/abs/2610.41038">arXiv preprint arXiv:2610.41038</a> (2026).
+                    </div>
+                </li>
+                <li>
+                    <div class="pub">
+                        <i>“Generalization Bounds on Optimal Control for Transformer Training and Wasserstein Distributional Robustness.”</i>
+                        with Naci Saldi and Serdar Yüksel,
+                        <a href="https://arxiv.org/abs/2607.27975">arXiv preprint arXiv:2607.27975</a> (2026).
+                    </div>
+                </li>
+                <li>
+                    <div class="pub">
+                        <i>“An Optimal Control Approach to Transformer Training.”</i>
+                        with Naci Saldi and Serdar Yüksel,
+                        <a href="https://arxiv.org/abs/2603.09571">arXiv preprint arXiv:2603.09571</a> (2026).
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+    <section>
+        <h2>Departmental Talks</h2>
         <ol class="talks" reversed>
             <li>
                 <div class="talk">
@@ -177,7 +216,7 @@
                 </div>
             </li>
         </ol>
-    </div>
+    </section>
 </body>
 
 </html>
